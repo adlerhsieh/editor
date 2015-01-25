@@ -5,7 +5,7 @@ editor.getSession().setMode("ace/mode/ruby");
 document.getElementById('editor').style.fontSize='14px';
 $(document).ready(function(){
 	    
-	compute_result();
+	// compute_result();
 
 	$("#tip").hide();
 

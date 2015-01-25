@@ -1,2 +1,2 @@
-require './editor'
+require './app/editor'
 run Editor
