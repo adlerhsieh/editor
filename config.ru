@@ -1,0 +1,2 @@
+require './editor'
+run Editor
