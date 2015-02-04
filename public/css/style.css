@@ -16,9 +16,18 @@ body {
 }
 
 #editor {
-    width: 100%;
+    width: 50%;
     height: 400px;
     position: relative;
+    /*float: right;*/
+}
+
+.playground {
+	width: 50%;
+	height: 400px;
+	margin-top: -414px;
+	background-color: #F2F2F2;
+	float: right;
 }
 
 #result {

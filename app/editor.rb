@@ -6,13 +6,17 @@ class Editor < Sinatra::Base
 
 	before "/data" do
 	code_array = params[:code]
-	if code_array.class == Array && code_array.length > 0
-		@code_string = code_array.inject("") { |result, line| result += line + ";"}
+		if code_array.class == Array && code_array.length > 0
+			@code_string = code_array.inject("") { |result, line| result += line + ";"}
+		end
 	end
+
+	get "/" do
+		redirect "/ace"
 	end
 
 	get "/ace" do
-		erb :'ace.html'
+		erb :'ace.html', :layout => :'layout.html'
 	end
 
 	post "/data" do
